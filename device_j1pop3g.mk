@@ -30,7 +30,7 @@ PRODUCT_COPY_FILES += \
 
 LOCAL_PATH := device/samsung/j1pop3g
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
+	LOCAL_KERNEL := $(LOCAL_PATH)/stuff/kernel
 else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
