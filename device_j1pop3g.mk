@@ -21,7 +21,7 @@ PRODUCT_COPY_FILES += \
 	device/samsung/j1pop3g/rc_files/init.sc8830.rc:root/init.sc8830.rc \
 	device/samsung/j1pop3g/rc_files/init.sc8830.usb.rc:root/init.sc8830.usb.rc \
 	device/samsung/j1pop3g/rc_files/ueventd.sc8830.rc:root/ueventd.sc8830.rc \
-        device/samsung/j1pop3g/init.recovery.board.rc:root/init.recovery.board.rc \
+        device/samsung/j1pop3g/rc_files/init.recovery.board.rc:root/init.recovery.board.rc \
         device/samsung/j1pop3g/property_contexts:root/property_contexts \
         device/samsung/j1pop3g/seapp_contexts:root/seapp_context \
         device/samsung/j1pop3g/sepolicy/file_contexts:root/file_contexts \
