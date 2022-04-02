@@ -49,7 +49,7 @@ jobs:
         export ALLOW_MISSING_DEPENDENCIES=true
         export LC_ALL=C
         lunch cm_j1pop3g-eng
-        make -j$(nproc --all) recoveryimage
+        make -j$(nproc --all) otapackage
         export PATH=$OLDPATH
         export JAVA_HOME=$OLDJAVAHOME
     - name: Uploading LineageRecovery builds
