@@ -16,7 +16,7 @@ PRODUCT_COPY_FILES += \
 	device/samsung/j1pop3g/rc_files/init.j1pop3g.rc:root/init.j1pop3g.rc \
 	device/samsung/j1pop3g/rc_files/init.j1pop3g_base.rc:root/init.j1pop3g_base.rc \
 	device/samsung/j1pop3g/rc_files/init.wifi.rc:root/init.wifi.rc \
-	device/samsung/j1pop3g/rc_files/fstab.sc8830:root/fstab.sc8830 \
+	device/samsung/j1pop3g/fstab.sc8830:root/fstab.sc8830 \
 	device/samsung/j1pop3g/rc_files/init.board.rc:root/init.board.rc \
 	device/samsung/j1pop3g/rc_files/init.sc8830.rc:root/init.sc8830.rc \
 	device/samsung/j1pop3g/rc_files/init.sc8830.usb.rc:root/init.sc8830.usb.rc \
