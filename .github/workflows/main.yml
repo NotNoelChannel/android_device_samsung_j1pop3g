@@ -23,7 +23,7 @@ jobs:
         sudo apt-get update
         sudo apt-get install zip gcc-multilib g++-multilib \
           libc6-dev-i386 lib32ncurses5-dev lib32z1-dev \
-          libgl1-mesa-dev libxml2-utils xsltproc schedtool axel
+          libgl1-mesa-dev libxml2-utils xsltproc schedtool axel gperf
         mkdir ~/.jdk_7
         cd ~/.jdk_7
         axel -q -n $(nproc --all) https://download.java.net/openjdk/jdk7u75/ri/openjdk-7u75-b13-linux-x64-18_dec_2014.tar.gz
@@ -48,7 +48,7 @@ jobs:
         source build/envsetup.sh
         export ALLOW_MISSING_DEPENDENCIES=true
         export LC_ALL=C
-        lunch lineage_goldfish-eng
+        lunch cm_j1pop3g-eng
         make -j$(nproc --all) otapackage
         export PATH=$OLDPATH
         export JAVA_HOME=$OLDJAVAHOME
@@ -56,4 +56,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: twrp
-        path: /home/runner/TWRP/out/target/product/goldfish/lineage-11-20220402-UNOFFICIAL-goldfish.zip
+        path: /home/runner/TWRP/out/target/product/j1pop3g/lineage-11-20220406-UNOFFICIAL-j1pop3g.zip
